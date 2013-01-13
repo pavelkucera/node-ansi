@@ -1,0 +1,20 @@
+{
+	"name": "pavelkucera-ansi",
+	"version": "1.0.0dev",
+	"keywords": ["console", "cli", "ansi"],
+	"author": "Pavel Kučera",
+	"repository": {
+		"type" : "git",
+		"url" : "http://github.com/pavelkucera/node-ansi.git"
+	},
+
+	"dependencies": {
+		"coffee-script": "1.4.x"
+	},
+
+	"scripts": {
+		"build": "coffee -c src/ index.coffee",
+		"postinstall": "npm run build",
+		"update": "npm run build"
+	}
+}
